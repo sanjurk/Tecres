@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: url("GAL.jpg");
+
+	background-position:center;
+	background-size:cover;
+	overflow-x:hidden;
+	position:relative;
+	background-repeat:no-repeat;
+}
+.cards .outer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.cards .card {
+  background: linear-gradient(#F9957F,#F2F5D0);
+  width: 700px;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  opacity: 0;
+  pointer-events: none;
+  position: absolute;
+  justify-content: space-between;
+  border-radius: 100px 20px 20px 100px;
+  animation: animate 15s linear infinite;
+  animation-delay: calc(3s * var(--delay));
+}
+.outer:hover .card {
+  animation-play-state: paused;
+  box-shadow: 0 0 10px 0 #e8e8c0 inset, 0 0 20px 2px #f4f5f0;
+  border: 3px solid #fbff00;
+}
+.cards .card:last-child {
+  animation-delay: calc(-3s * var(--delay));
+}
+@keyframes animate {
+    5%,
+  20% {
+    opacity: 0.4;
+    transform: translateY(100%) scale(0.4);
+  }
+  25%,
+  40% {
+    opacity: 1;
+    pointer-events: auto;
+    transform: translateY(0%) scale(1);
+  }
+  45%,
+  60% {
+    opacity: 0.4;
+    transform: translateY(-20%) scale(0.2);
+  } 
+}
+.card .content {
+  display: flex;
+  align-items: center;
+}
+.cards .card .img {
+  height: 150px;
+  width: 150px;
+  position: absolute;
+  left: -5px;
+  background: #4e56bd;
+  border-radius: 50%;
+  padding: 5px;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+}
+.card .img img {
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.card .details {
+  margin-left: 210px;
+}
+.details span {
+  font-weight: 600;
+  font-size: 18px;
+}
+.card a {
+  text-decoration: none;
+  padding: 7px 18px;
+  border-radius: 25px;
+  color: #332d64;
+  background: linear-gradient(to bottom, #bfc20a 0%, #c9d9e9 100%);
+  transition: all 0.1s ease;
+}
+.card a:hover {
+  transform: scale(0.94);
+}
+
+.ball{
+  border-radius: 50%;
+  position: absolute;
+  z-index: -5;
+}
+.ball1{
+  transform: translate(280px, -90px);
+  height: 300px;
+  width: 300px;
+  background: linear-gradient(90deg,#e98888,rgb(35, 63, 63));
+}
+.ball2{
+  transform: translate(-260px, 220px);
+  height: 150px;
+  width: 150px;
+  background: linear-gradient(90deg,#e3d189,#c8759c);
+}
+.ball3{
+  transform: translate(-170px, -210px);
+  height: 240px;
+  width: 240px;
+  background: linear-gradient(90deg,#76a1cc,#da6989);
+}
+p
+{
+    font-family: Century Gothic;
+}
+
+</style>
+
+</head>
+
+<body>
+  <div class="context">
+  <div id="cardWrap">
+    <div class="card1">
+    
+  
+<div class="cards">
+  <div class="outer">
+    <div class="card" style="--delay:-1;">
+      <div class="content">
+        <div class="img"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQAFIvBPH9fIMQZis4SHYTuv485uqr38bg1VQ&usqp=CAU"></div>
+        <div class="details">
+          <span class="name">TekWizard_23</span>
+          <div class="text1">
+          <p>
+            <i class="fa fa-trophy" aria-hidden="true">WINNER🏆</i>  
+            <br>
+            TECHYZZ<br>
+            Team: <br>
+            College name:<br>
+            Points:-<br>
+          </p>
+        </div>
+          
+        </div>
+      </div>
+      <a href="R1.html">MENU</a>
+    </div>
+    <div class="card" style="--delay:0;">
+      <div class="content">
+        <div class="img"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSIMYmBQyoz9BWjEiMi5XipSPOmhamZUyI1gQ&usqp=CAU" alt=""></div>
+        <div class="details">
+          <span class="name">TekWizard_23</span>
+          <p><i class='fas fa-medal' style='font-size:24px'>RUNNER🏅</i><br>
+            TECHYZZ<br>
+            Team: <br>
+            College name:<br>
+            Points:-<br></p>
+        </div>
+      </div>
+      <a href="R1.html">MENU</a>
+     
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="ball ball1"></div>
+<div class="ball ball2"></div>
+<div class="ball ball3"></div>
+    </body>
+    </html>
